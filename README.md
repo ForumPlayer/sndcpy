@@ -78,7 +78,7 @@ independently on the device and on the computer.
 To uninstall the app from the device:
 
 ```bash
-adb uninstall com.rom1v.sndcpy
+adb uninstall dev.forumplayer.sndcpy
 ```
 
 ## Apps restrictions

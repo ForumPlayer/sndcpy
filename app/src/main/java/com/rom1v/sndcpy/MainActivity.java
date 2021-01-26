@@ -1,4 +1,4 @@
-package com.rom1v.sndcpy;
+package dev.forumplayer.sndcpy;
 
 import android.Manifest;
 import android.app.Activity;

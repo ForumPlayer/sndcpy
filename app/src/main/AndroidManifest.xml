@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.rom1v.sndcpy">
+    package="dev.forumplayer.sndcpy">
 
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round">
         <activity
-            android:name="com.rom1v.sndcpy.MainActivity"
+            android:name="dev.forumplayer.sndcpy.MainActivity"
             android:theme="@style/Theme.Transparent"
             android:showWhenLocked="true"
             android:turnScreenOn="true">
@@ -21,7 +21,7 @@
         </activity>
 
         <service
-            android:name="com.rom1v.sndcpy.RecordService"
+            android:name="dev.forumplayer.sndcpy.RecordService"
             android:enabled="true"
             android:exported="false"
             android:foregroundServiceType="mediaProjection" />

@@ -1,4 +1,4 @@
-package com.rom1v.sndcpy;
+package dev.forumplayer.sndcpy;
 
 import android.app.Activity;
 import android.app.Notification;
@@ -31,13 +31,13 @@ public class RecordService extends Service {
     private static final String CHANNEL_ID = "sndcpy";
     private static final int NOTIFICATION_ID = 1;
 
-    private static final String ACTION_RECORD = "com.rom1v.sndcpy.RECORD";
-    private static final String ACTION_STOP = "com.rom1v.sndcpy.STOP";
+    private static final String ACTION_RECORD = "dev.forumplayer.sndcpy.RECORD";
+    private static final String ACTION_STOP = "dev.forumplayer.sndcpy.STOP";
     private static final String EXTRA_MEDIA_PROJECTION_DATA = "mediaProjectionData";
 
     private static final int MSG_CONNECTION_ESTABLISHED = 1;
 
-    private static final String SOCKET_NAME = "sndcpy";
+    private static final String SOCKET_NAME = "sndcpy.sckt";
 
 
     private static final int SAMPLE_RATE = 48000;
