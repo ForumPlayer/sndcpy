@@ -1,0 +1,18 @@
+version: 2.1
+
+orbs:
+ android: circleci/android@0.2.0
+
+jobs:
+  build:
+    executor: android/android
+
+    steps:
+      - checkout
+      - run:
+          command: ./gradlew assembleDebug
+          #command: ./gradlew assembleRelease
+      - store_artifacts:
+          path: app/build/outputs/apk/debug/app-debug.apk
+          #path: app/build/outputs/apk/release/app-release.apk
+          destination: dev.forumplayer.sndcpy.apk
